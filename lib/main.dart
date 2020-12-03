@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
   List content;
   final String image_url = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/";
   final String url =
-      'http://api.themoviedb.org/3/movie/top_rated?api_key=35aa7ddef63cd7218e1005ea27973e52';
+      'http://api.themoviedb.org/3/movie/top_rated?api_key=<<---change this with your app key----->>';
   Future<String> getData() async {
     http.Response response = await http
         .get(Uri.encodeFull(url), headers: {'accept': 'application/json'});
