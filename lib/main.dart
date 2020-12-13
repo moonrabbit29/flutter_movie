@@ -29,7 +29,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   List content;
   final String url =
-      'http://api.themoviedb.org/3/movie/top_rated?api_key=35aa7ddef63cd7218e1005ea27973e52';
+      'http://api.themoviedb.org/3/movie/top_rated?PUT_YOUR_API_KEY';
   Future<String> getData() async {
     http.Response response = await http
         .get(Uri.encodeFull(url), headers: {'accept': 'application/json'});
